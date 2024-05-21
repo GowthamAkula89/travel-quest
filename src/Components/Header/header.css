@@ -53,7 +53,6 @@
     cursor: pointer;
 }
 .btn{
-    font-family: var(--font-family);
     background-color: #f26a47;
     color: var(--color-white);
     border: none;

@@ -1,0 +1,111 @@
+.hero-section {
+    position: relative;
+    width: 100vw;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.image-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.animated-image {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fadeAnimation 20s infinite;
+}
+
+.animated-image:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.animated-image:nth-child(2) {
+    animation-delay: 4s;
+}
+
+.animated-image:nth-child(3) {
+    animation-delay: 8s;
+}
+
+.animated-image:nth-child(4) {
+    animation-delay: 12s;
+}
+
+.animated-image:nth-child(5) {
+    animation-delay: 16s;
+}
+
+.hero-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: var(--color-white);
+    line-height: 65px;
+}
+
+.hero-inner-title {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.hero-inner-description {
+    font-size: 1.2em;
+}
+
+.hero-inner-overlayForm{
+    display: flex;
+    align-items: center;
+}
+
+.destination-dropdown, .interests-dropdown{
+    height: 44px;
+    width: 320px;
+    padding: 5px 30px 5px 15px;
+    border: none;
+    outline: none;
+}
+
+.destination-dropdown{
+    border-radius: 5px 0 0 5px;
+}
+.travelers-count-dropdown, .budget-dropdown{
+    height: 44px;
+    width: 218px;
+    padding: 5px 30px 5px 15px;
+    border: none;
+    outline: none;
+}
+.create-trip-btn{
+    width: 198px;
+    height: 44px;
+    cursor: pointer;
+    background: #f26a47;
+    border-radius: 0 5px 5px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@keyframes fadeAnimation {
+    0% {
+        opacity: 0;
+    }
+    5% {
+        opacity: 1;
+    }
+    25% {
+        opacity: 1;
+    }
+    30% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
