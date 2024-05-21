@@ -1,7 +1,9 @@
 :root {
   /* Global variables to be defined here */
-   --color-white: #ffffff;
-   --color-black: #121212;
+  --font-family: "Public Sans", sans-serif;
+  --color-white: #ffffff;
+  --color-black: #121212;
+  --color-gray: #3f3f3f;
 }
 
 body{
