@@ -1,3 +1,8 @@
 .App{
     font-family: var(--font-family);
 }
+@media (min-width: 400px) {
+    body {
+        font-size: calc(0.0833333333vw + 14.6666666667px);
+    }
+}

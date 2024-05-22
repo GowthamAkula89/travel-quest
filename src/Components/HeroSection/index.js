@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./heroSection.css";
-
+import ModalComponent from "../ModalComponent";
 const continents = {
     "Africa": ["Nigeria", "Egypt", "South Africa", "Kenya"],
     "Asia": ["China", "India", "Japan", "Thailand"],
@@ -44,11 +44,15 @@ const HeroSection = () => {
     const [selectedInterests, setSelectedInterests] = useState("");
     const [selectedTravelers, setSelectedTravelers] = useState("");
     const [selectedBudget, setSelectedBudget] = useState("");
+    const [showModal, setShowModal] = useState(false);
 
     const handleLocationChange = (e) => {
         setSelectedDestination(e.target.value);
     };
 
+    const handleCreateTrip = () =>{
+        setShowModal(true);
+    }
     return (
         <div className="hero-section">
             <div className="image-container">
@@ -115,7 +119,8 @@ const HeroSection = () => {
                                 <option key={option} value={option}>{option}</option>
                             ))}
                         </select>
-                    <div className="create-trip-btn">CREATE MY TRIP NOW</div>
+                    <div className="create-trip-btn" onClick={handleCreateTrip}>CREATE MY TRIP NOW</div>
+                    <ModalComponent showModal={showModal} setShowModal={setShowModal}/>
                 </div>
             </div>
             <div className="hero-description">Experience a completely customized and flexible trip of a lifetime with experts you can trust. We are an award-winning team that offers round-the-clock local support during your trip and 100% financial protection so you know you are in safe hands. That’s why over 60,000+ enchanted guests vouch for us – because with us, you can dream, book and travel carefree.</div>
