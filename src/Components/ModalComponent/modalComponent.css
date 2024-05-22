@@ -26,7 +26,7 @@
     background-color:var(--color-white);
     padding: 20px;
     border-radius: 8px;
-    width: 538px;
+    min-width: 352px;
     overflow-y: auto;
     border: none;
     outline: none;
@@ -35,6 +35,9 @@
     gap: 15px;
     flex-direction: column;
     align-items: center;
+}
+.modal-content-heading {
+    font-size: calc(0.8333333333vw + 16.6666666667px);
 }
 .content-input{
     max-width: 400px;

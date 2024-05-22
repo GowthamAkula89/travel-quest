@@ -1,14 +1,16 @@
 .footer{
     background-color: #1B3C74;
-    padding: 40px 135px 30px 162px;
+    padding: 40px 135px 30px 40px;
     display: flex;
+    
     flex-direction: column;
     gap: 15px;
 }
 
 .footer-content{
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 35px;
     padding-top: 41px;
 }
 
