@@ -14,10 +14,7 @@ const Header = () => {
     return(
         <div className="header">
             <div className="header-title">
-            <div className="header-logo">
-                <PiAirplaneTakeoffLight className="logo-img"/>
-                <div className="logo-title"><span className="logo-name">Travel</span> Quest</div>
-            </div>
+                {Logo()}
                 <div className="vertical-bar"></div>
                 <div className="header-text">Private tailor-made journeys of a lifetime</div>
             </div>
