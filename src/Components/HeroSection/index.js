@@ -116,9 +116,9 @@ const HeroSection = () => {
                             ))}
                         </select>
                     <div className="create-trip-btn">CREATE MY TRIP NOW</div>
-
                 </div>
             </div>
+            <div className="hero-description">Experience a completely customized and flexible trip of a lifetime with experts you can trust. We are an award-winning team that offers round-the-clock local support during your trip and 100% financial protection so you know you are in safe hands. That’s why over 60,000+ enchanted guests vouch for us – because with us, you can dream, book and travel carefree.</div>
         </div>
     );
 };
