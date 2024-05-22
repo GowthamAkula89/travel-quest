@@ -60,3 +60,18 @@
     padding: 12px 17px;
     cursor: pointer;
 }
+@media (max-width: 765px) {
+    .vertical-bar{
+        display: none;
+    }
+    .header-text{
+        display: none
+    }
+    .btn{
+        padding: 5px;
+        font-size: 9px;
+    }
+    .constact-number{
+        font-size: 12px;
+    }
+}
