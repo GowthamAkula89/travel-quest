@@ -58,7 +58,7 @@ const HeroSection = () => {
             <div className="image-container">
                 <img src="heroImg1.jpg" alt="heroImg" className="animated-image" />
                 <img src="heroImg2.jpg" alt="heroImg" className="animated-image" />
-                <img src="heroImg3.jpeg" alt="heroImg" className="animated-image" />
+                <img src="heroImg3.jpg" alt="heroImg" className="animated-image" />
                 <img src="heroImg4.jpg" alt="heroImg" className="animated-image" />
                 <img src="heroImg5.jpg" alt="heroImg" className="animated-image" />
             </div>
